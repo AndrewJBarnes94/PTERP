@@ -7,7 +7,5 @@
         mc:Ignorable="d"
         Title="PT-ERP" Height="500" Width="800">
     <StackPanel>
-        <Label>Hello World</Label>
-        <Button Name="btn1" Click="onClick">Click me!</Button>
     </StackPanel>
 </Window>
