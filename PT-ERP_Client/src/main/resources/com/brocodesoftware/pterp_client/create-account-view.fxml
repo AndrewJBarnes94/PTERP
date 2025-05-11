@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="15" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.brocodesoftware.pterp_client.CreateAccountController">
+
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="New Username" minWidth="100"/>
+        <TextField fx:id="newUsernameField" promptText="Choose a username"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="New Password" minWidth="100"/>
+        <PasswordField fx:id="newPasswordField" promptText="Choose a password"/>
+    </HBox>
+
+    <Button text="Create Account" onAction="#onCreateAccountClick" prefWidth="250"/>
+
+    <Hyperlink text="Back to Login" onAction="#onNavigateToLogin"/>
+</VBox>

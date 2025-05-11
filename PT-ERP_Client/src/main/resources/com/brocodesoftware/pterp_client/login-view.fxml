@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
 <VBox alignment="CENTER" spacing="15" xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
@@ -14,17 +14,16 @@
 
     <HBox spacing="10" alignment="CENTER_LEFT">
         <Label text="Username" minWidth="80"/>
-        <TextField fx:id="usernameField" promptText="Enter username" />
+        <TextField fx:id="usernameField" promptText="Enter username"/>
     </HBox>
 
     <HBox spacing="10" alignment="CENTER_LEFT">
         <Label text="Password" minWidth="80"/>
-        <PasswordField fx:id="passwordField" promptText="Enter password" />
+        <PasswordField fx:id="passwordField" promptText="Enter password"/>
     </HBox>
 
-    <HBox alignment="CENTER_LEFT">
-        <Button text="Login" fx:id="loginButton" onAction="#onLoginClick" prefWidth="250"/>
-    </HBox>
+    <Button text="Login" onAction="#onLoginClick" prefWidth="250"/>
 
+    <Hyperlink text="Create Account" onAction="#onNavigateToCreateAccount"/>
 
 </VBox>

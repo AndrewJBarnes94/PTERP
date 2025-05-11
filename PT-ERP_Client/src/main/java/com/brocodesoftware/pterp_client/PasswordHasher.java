@@ -13,6 +13,13 @@ public class PasswordHasher {
 
     public String hash() {
         List<Integer> asciiValues = getAsciiValues();
+
+        // do something with this?
+        int product = 1;
+        for (int ascii: asciiValues) {
+            product *= ascii;
+        }
+
         StringBuilder builder = new StringBuilder();
         for (int ascii : asciiValues) {
             builder.append(ascii);

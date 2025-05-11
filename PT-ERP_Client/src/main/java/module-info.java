@@ -11,6 +11,7 @@ module com.brocodesoftware.pterp_client {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.desktop;
+    requires java.sql;
 
     opens com.brocodesoftware.pterp_client to javafx.fxml;
     exports com.brocodesoftware.pterp_client;
