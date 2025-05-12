@@ -22,7 +22,7 @@
         <PasswordField fx:id="newPasswordField" promptText="Choose a password"/>
     </HBox>
 
-    <Button text="Create Account" onAction="#onCreateAccountClick" prefWidth="250"/>
+    <Button text="Create Account" onAction="#onCreateAccountClick" prefWidth="250" defaultButton="true"/>
 
     <Hyperlink text="Back to Login" onAction="#onNavigateToLogin"/>
 </VBox>

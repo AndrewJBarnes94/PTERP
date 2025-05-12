@@ -43,7 +43,10 @@ public class LoginController {
             if (rs.next()) {
                 System.out.println("Login successful for user: " + username);
 
-                // Close current Create Account window
+                // Set session login flag
+                LoginSession.setLoggedIn(true);
+
+                // Close the login window
                 Stage currentStage = (Stage) usernameField.getScene().getWindow();
                 currentStage.close();
 
@@ -67,5 +70,4 @@ public class LoginController {
             e.printStackTrace();
         }
     }
-
 }

@@ -140,7 +140,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.brocodesoftware.pterp_client/com.brocodesoftware.pterp_client.Application
+                                com.brocodesoftware.pterp_client/com.brocodesoftware.pterp_client.App
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
