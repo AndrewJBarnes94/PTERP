@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ERP.MainPage"
+    BackgroundColor="#F5F7FA">
+
+    <Grid RowDefinitions="Auto,*" ColumnDefinitions="200,*">
+        
+        <!-- Sidebar -->
+        <VerticalStackLayout Grid.RowSpan="2"
+                             BackgroundColor="#2E3A59"
+                             Spacing="30"
+                             Padding="20,40">
+            <Label Text="ERP Pro"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Bold" />
+
+            <Button Text="Dashboard"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    Clicked="OnDashboardClicked" />
+            
+            <Button Text="Inventory"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    Clicked="OnInventoryClicked" />
+
+            <Button Text="Sales"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    Clicked="OnSalesClicked" />
+
+            <Button Text="Reports"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    Clicked="OnReportsClicked" />
+        </VerticalStackLayout>
+
+        <!-- Top Bar -->
+        <Grid Grid.Column="1"
+              BackgroundColor="White"
+              Padding="20"
+              HeightRequest="60">
+            <Label Text="Welcome, Admin"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   TextColor="Gray"
+                   FontSize="16"/>
+        </Grid>
+
+        <!-- Main Content -->
+        <ScrollView Grid.Row="1" Grid.Column="1">
+            <VerticalStackLayout Padding="20" Spacing="25">
+
+                <!-- Dashboard Tiles -->
+                <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="20">
+
+                    <!-- Inventory -->
+                    <Border Background="#2196F3" StrokeThickness="0" StrokeShape="RoundRectangle 10">
+                        <VerticalStackLayout Padding="15">
+                            <Label Text="Inventory"
+                                   TextColor="White"
+                                   FontSize="16"
+                                   FontAttributes="Bold"/>
+                            <Label Text="1,245"
+                                   TextColor="White"
+                                   FontSize="24"
+                                   FontAttributes="Bold"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Sales -->
+                    <Border Background="#4CAF50" StrokeThickness="0" StrokeShape="RoundRectangle 10">
+                        <VerticalStackLayout Padding="15">
+                            <Label Text="Sales Today"
+                                   TextColor="White"
+                                   FontSize="16"
+                                   FontAttributes="Bold"/>
+                            <Label Text="$12,340"
+                                   TextColor="White"
+                                   FontSize="24"
+                                   FontAttributes="Bold"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Orders -->
+                    <Border Background="#FF9800" StrokeThickness="0" StrokeShape="RoundRectangle 10">
+                        <VerticalStackLayout Padding="15">
+                            <Label Text="Open Orders"
+                                   TextColor="White"
+                                   FontSize="16"
+                                   FontAttributes="Bold"/>
+                            <Label Text="37"
+                                   TextColor="White"
+                                   FontSize="24"
+                                   FontAttributes="Bold"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Alerts -->
+                    <Border Background="#F44336" StrokeThickness="0" StrokeShape="RoundRectangle 10">
+                        <VerticalStackLayout Padding="15">
+                            <Label Text="Alerts"
+                                   TextColor="White"
+                                   FontSize="16"
+                                   FontAttributes="Bold"/>
+                            <Label Text="3"
+                                   TextColor="White"
+                                   FontSize="24"
+                                   FontAttributes="Bold"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                </Grid>
+
+                <!-- Placeholder for Table -->
+                <Border Stroke="#D0D0D0" StrokeThickness="1" BackgroundColor="White" StrokeShape="RoundRectangle 8">
+                    <VerticalStackLayout Padding="20" Spacing="10">
+                        <Label Text="Recent Transactions"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#2E3A59" />
+                        <Label Text="[ Data Grid Placeholder ]"
+                               FontSize="14"
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
